@@ -405,6 +405,10 @@ h1 {
     width: 90%;
   }
 
+  .span-icon:hover{
+    text-decoration: underline;
+  }
+
   .inputs{
     width: 50%;
     align-items: center;

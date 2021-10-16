@@ -415,20 +415,41 @@ h1 {
     transform: scale(1.05);
   }
 
+
+  .main-form{
+    height: 60vh;
+  }
+
   .inputs {
-    width: 50%;
+    width: 70%;
     align-items: center;
     flex-flow: column nowrap;
+    margin-bottom: 1rem;
+  }
+
+  .inputs input{
+    height: 2.5rem;
+    margin-bottom: .5rem;
   }
 
   .main-form textarea {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     padding: 0.5rem;
   }
 
   .submit-section input {
-    width: 5rem;
+    background-color: #fff;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5.5rem;
+    height: 2rem;
     text-align: center;
+  }
+
+  .submit-section input:hover{
+    cursor: pointer;
+    background-color: #ddd;
   }
 }

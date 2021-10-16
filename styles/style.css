@@ -1,3 +1,12 @@
+/*ToDo List
+1. Variables to set the main, secondary and other colors, bg-colors, borders, text and links
+
+2. Fix the height in projects section. It must be from auto to a good height to contain the imgs better
+
+
+
+
+*/
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;

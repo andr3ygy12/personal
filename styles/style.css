@@ -1,11 +1,6 @@
 /*ToDo List
 1. Variables to set the main, secondary and other colors, bg-colors, borders, text and links
-
 2. Fix the height in projects section. It must be from auto to a good height to contain the imgs better
-
-
-
-
 */
 html {
   box-sizing: border-box;
@@ -64,7 +59,6 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-attachment: scroll; */
 }
 .blur-like {
   display: flex;
@@ -106,38 +100,6 @@ h1 {
   padding: 0;
   list-style-position: inside;
 }
-
-/* .learning-title {
-  font-size: 2rem;
-  text-align: center;
-  margin: 0 0 0.5rem;
-}
-
-.learning {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
-
-.cards {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  width: 100%;
-  margin: 0.5rem;
-  padding: 1rem;
-  text-align: center;
-}
-
-.card-title {
-  margin: 0 0 1rem;
-}
-.icon-card {
-  font-size: 2.5rem;
-} */
 
 .learning {
   width: 100%;
@@ -216,21 +178,20 @@ h1 {
   align-items: center;
 }
 
-.main-form > *{
+.main-form > * {
   font-size: 1rem;
   font-family: sans-serif;
   caret-color: #333;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
-.main-form * [required]:invalid{
-  border:thin solid #f44336;
+.main-form * [required]:invalid {
+  border: thin solid #f44336;
 }
 
-.main-form * [required]:valid{
-  border:thin solid #4caf50;
+.main-form * [required]:valid {
+  border: thin solid #4caf50;
 }
-
 
 .inputs {
   display: flex;
@@ -416,16 +377,23 @@ h1 {
     width: 90%;
   }
 
-  .span-icon:hover {
-    text-decoration: underline;
-  }
-
-  .link-icon:hover{
+  .link-icon:hover {
     transform: scale(1.05);
   }
 
+  .fa-twitter:hover {
+    color: #1da1f2;
+  }
 
-  .main-form{
+  .fa-facebook:hover {
+    color: #4267b2;
+  }
+
+  .fa-telegram:hover {
+    color: #0088cc;
+  }
+
+  .main-form {
     height: 60vh;
   }
 
@@ -436,9 +404,9 @@ h1 {
     margin-bottom: 1rem;
   }
 
-  .inputs input{
+  .inputs input {
     height: 2.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   .main-form textarea {
@@ -457,7 +425,7 @@ h1 {
     text-align: center;
   }
 
-  .submit-section input:hover{
+  .submit-section input:hover {
     cursor: pointer;
     background-color: #ddd;
   }

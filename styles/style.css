@@ -93,7 +93,7 @@ h1 {
   text-align: justify;
 }
 
-.info-project ul{
+.info-project ul {
   padding: 0;
   list-style-position: inside;
 }
@@ -130,197 +130,204 @@ h1 {
   font-size: 2.5rem;
 } */
 
-.learning{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: space-between;
-    padding: 0 .5rem 0;
+.learning {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  padding: 0 0.5rem 0;
 }
 
-.learning-title{
-    text-align: center;
-    margin-top: 0;
+.learning-title {
+  text-align: center;
+  margin-top: 0;
 }
 
-.cards-section{
+.cards-section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-
 }
-.cards{
-    width: 30%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    margin-bottom: 1.5rem;
+.cards {
+  width: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
-.card-title{
-    font-size: 1.4rem;
-    margin: 1rem;
-    text-align: center;
-}
-
-.icon-card{
-    font-size: 3rem;
+.card-title {
+  font-size: 1.4rem;
+  margin: 1rem;
+  text-align: center;
 }
 
-.html-icon{
-    color: #E54D26;
+.icon-card {
+  font-size: 3rem;
 }
 
-.css-icon{
-    color: #33A9DC;
+.html-icon {
+  color: #e54d26;
 }
 
-
-.python-logo{
-    color: #366E9C;
+.css-icon {
+  color: #33a9dc;
 }
 
-.js-icon{
-    color: #F0BE25;
+.python-logo {
+  color: #366e9c;
 }
 
-.sql-icon{
-    color: #2077BC;
+.js-icon {
+  color: #f0be25;
 }
 
-.contact-form{
+.sql-icon {
+  color: #2077bc;
+}
+
+.contact-form {
   width: 100%;
 }
-
-.contact-title{
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+.contact-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   font-size: 2rem;
   text-align: center;
 }
 
-.main-form{
+.main-form {
   width: 100%;
   height: 40vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
   align-items: center;
-  
 }
 
-.inputs{
+.main-form > *{
+  font-size: 1rem;
+  font-family: sans-serif;
+  caret-color: #333;
+  margin-bottom: .25rem;
+}
+
+.main-form * [required]:invalid{
+  border:thin solid #f44336;
+}
+
+.main-form * [required]:valid{
+  border:thin solid #4caf50;
+}
+
+
+.inputs {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
 }
 
-.inputs input{
-  width: 50%;
+.inputs input {
+  width: 70%;
   height: 2rem;
-  margin: .5rem;
-  padding: .5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
-.main-form textarea{
-  font-family: sans-serif;
+.main-form textarea {
   width: 80%;
-  height: 70%;
-  padding: .5rem;
+  height: 80%;
+  padding: 0.5rem;
   resize: none;
 }
 
-.submit-section{
-  margin-top: .5rem;
+.submit-section {
+  margin-top: 0.5rem;
 }
 
 .submit-section input {
   font-size: 1rem;
-  padding: .1rem;
+  padding: 0.1rem;
 }
 
-.information{
+.information {
   width: 100%;
 }
-.about-me{
-  padding: .5rem;
+.about-me {
+  padding: 0.5rem;
 }
-.about-me-title{
+.about-me-title {
   font-size: 2rem;
   text-align: center;
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-.divider{
+.divider {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
 }
-.about-me-img-article{
+.about-me-img-article {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.about-me-img{
+.about-me-img {
   border-radius: 50%;
   width: 80%;
   height: 100%;
 }
 
-.social-media{
-  width: 100%; 
+.social-media {
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
   align-items: flex-start;
-
 }
-.social-media-icon{
+.social-media-icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 2rem;
 }
 
-
-
-.link-icon{
+.link-icon {
   color: #000;
   text-decoration: none;
 }
 
-.span-icon{
+.span-icon {
   font-size: 1rem;
   font-family: "Raleway", sans-serif;
-  margin-left: .5rem;
-
+  margin-left: 0.5rem;
 }
-.copyright-section{
+.copyright-section {
   margin: 1rem 0 0;
   text-align: center;
 }
 
 @media screen and (min-width: 1020px) {
-  .ul-nav{
+  .ul-nav {
     width: 25%;
     justify-content: space-evenly;
   }
-  .link-item:hover{
+  .link-item:hover {
     text-decoration: underline;
   }
-  h1{
+  h1 {
     font-size: 5vw;
   }
 
-  .projects{
+  .projects {
     display: flex;
     flex-flow: column wrap;
   }
 
-  .contenedor-proyecto{
+  .contenedor-proyecto {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -328,49 +335,46 @@ h1 {
     margin-top: 1rem;
   }
 
-
-  .img-project{
+  .img-project {
     width: 100%;
-    height: 100%;
+    height: 400px;
   }
 
-  .img-project:hover{
+  .img-project:hover {
     transform: scale(1.01);
   }
 
-  .projects-article{
+  .projects-article {
     display: flex;
     flex-flow: column nowrap;
     width: 45%;
     height: auto;
   }
 
-
-  .project-title{
+  .project-title {
     text-align: center;
   }
 
-  .card-text{
+  .card-text {
     text-align: justify;
   }
 
-  .what-i-used{
+  .what-i-used {
     margin-bottom: 0;
   }
 
-
-  .learning{
+  .learning {
     margin-top: 2rem;
     display: block;
     padding: 1rem;
   }
 
-  .learning-title{
+  .learning-title {
     font-size: 2rem;
     margin-bottom: 0;
   }
-  
-  .cards-section{
+
+  .cards-section {
     width: 100%;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -378,54 +382,53 @@ h1 {
     padding: 1rem;
   }
 
-  .card-title{
+  .card-title {
     font-size: 1.7rem;
   }
-  .icon-card{
+  .icon-card {
     font-size: 4rem;
   }
 
-
-  .icon-card:hover{
-    transform:scale(1.1);
+  .icon-card:hover {
+    transform: scale(1.1);
   }
 
-
-  .pre-footer{
+  .pre-footer {
     display: flex;
     flex-flow: row nowrap;
     padding: 1rem;
   }
 
-  .copyright-section{
+  .copyright-section {
     text-align: center;
   }
-  
-  .social-media{
+
+  .social-media {
     width: 90%;
   }
 
-  .span-icon:hover{
+  .span-icon:hover {
     text-decoration: underline;
   }
 
-  .inputs{
+  .link-icon:hover{
+    transform: scale(1.05);
+  }
+
+  .inputs {
     width: 50%;
     align-items: center;
     flex-flow: column nowrap;
   }
 
-  .main-form textarea{
-    font-family: sans-serif;
-    width: 70%;
-    height: 60%;
-    padding: .5rem;
-
+  .main-form textarea {
+    width: 50%;
+    height: 50%;
+    padding: 0.5rem;
   }
 
-  .submit-section input{
+  .submit-section input {
     width: 5rem;
     text-align: center;
   }
-
 }

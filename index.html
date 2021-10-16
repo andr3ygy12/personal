@@ -23,9 +23,9 @@
         <nav class="nav-header">
             <ul class="ul-nav">
                 <!-- <li class="list-item"><a href="" class="link-item">Inicio</a></li> -->
-                <li class="list-item"><a href="" class="link-item">Proyectos</a></li>
-                <li class="list-item"><a href="" class="link-item">Aprendizaje</a></li>
-                <li class="list-item"><a href="" class="link-item">Contacto</a></li>
+                <li class="list-item"><a href="#projects" class="link-item">Proyectos</a></li>
+                <li class="list-item"><a href="#learning" class="link-item">Aprendizaje</a></li>
+                <li class="list-item"><a href="#contact" class="link-item">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +37,7 @@
             </article>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2 class="projects-section-title">Proyectos</h2>
 
             <section class="contenedor-proyecto">
@@ -71,33 +71,32 @@
                 <article class="projects-article project-1">
 
                     <article class="info-project">
-                        <h2 class="project-title">Sitio de mascotas</h2>
+                        <h2 class="project-title">Proximamente...</h2>
                         <p class="card-text">
-                            Es un sitio web estatico y básico acerca de mascotas. Pensado como una página informativa
-                            para algún tipo de veterinaria o por el estilo.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas tempora maiores reiciendis exercitationem culpa expedita, earum beatae similique fugiat?
                         </p>
                         <h3 class="what-i-used"> Tecnologías usadas</h3>
                         <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Flexbox</li>
+                            <li>Proximamente</li>
+                            <li>Proximamente</li>
+                            <li>Proximamente</li>
                         </ul>
                     </article>
 
 
                     <article class="first-side">
                         <a href="https://andr3ygy12.github.io/flexbox/" target="_blank">
-                            <img src="./assets/media/images/PNG/mascotas.jpeg" alt="Imagen de un sitio de mascotas"
-                                class="img-project">
+                            <img src="./assets/media/images/PNG/coming-soon-g20179beed_1280.jpg" alt="Imagen de proximamente" class="img-project">
                         </a>
                     </article>
                 </article>
+                
             </section>
 
 
         </section>
 
-        <section class="learning">
+        <section class="learning" id="learning">
             <!-- CARDS PLACE -->
             <h2 class="learning-title">Tecnologías que estoy aprendiendo</h2>
             <section class="cards-section">
@@ -145,34 +144,36 @@
 
 
         <!-- info -->
-        <section class="pre-footer">
+        <section class="pre-footer" id="contact">
             <section class="information">
                 <section class="about-me">
                     <h2 class="about-me-title">Acerca de mí</h2>
                     <article class="about-me-text">
                         <p>
-                            Soy un estudiando de Analisis y Desarrollo de Sistemas de Información en el Servicio Nacional de
+                            Soy un estudiando de Analisis y Desarrollo de Sistemas de Información en el Servicio
+                            Nacional de
                             Aprendizaje (SENA), Colombia.
                         </p>
                         <p>
-                            Mas que admirar la tecnología, me gusta crearla; me gusta conocer nuevas maneras de dejar volar
+                            Mas que admirar la tecnología, me gusta crearla; me gusta conocer nuevas maneras de dejar
+                            volar
                             mi imaginación.
                         </p>
                     </article>
-    
+
                     <section class="divider">
                         <article class="about-me-img-article">
                             <img src="./assets/media/images/PNG/photo_2021-09-11_22-52-08.jpg"
                                 alt="Foto acerca del autor de la página" class="about-me-img">
                         </article>
-    
+
                         <article class="social-media">
                             <a href="" class="link-icon">
                                 <i class="fab fa-twitter social-media-icon">
                                     <span class="span-icon">Twitter</span>
                                 </i>
                             </a>
-    
+
                             <a href="" class="link-icon">
                                 <i class="fab fa-facebook social-media-icon"><span class="span-icon">Facebook</span></i>
                             </a>
@@ -182,18 +183,18 @@
                         </article>
                     </section>
                 </section>
-    
+
             </section>
-    
-    
+
+
             <section class="contact-form">
                 <h2 class="contact-title">Ponte en contacto conmigo!😁</h2>
-                <form action="" class="main-form" autocomplete="off">
+                <form action="https://formsubmit.co/andreyguerrero32@gmail.com" method="POST" class="main-form" autocomplete="off">
                     <section class="inputs">
-                        <input type="text" name="name" id="name" placeholder="Nombre de usuario">
-                        <input type="text" name="email" id="email" placeholder="Correo electronico">
+                        <input type="text" name="name" id="name" placeholder="Nombre de usuario" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+                        <input type="text" name="email" id="email" placeholder="Correo electronico" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" required>
                     </section>
-                    <textarea name="comment" id="comment" placeholder="Duda, inquietud, opinión, etc."></textarea>
+                    <textarea name="comment" id="comment" placeholder="Duda, inquietud, opinión, etc." required></textarea>
 
                     <section class="submit-section">
                         <input type="submit">

@@ -1,15 +1,11 @@
-/*ToDo List
-1. Variables to set the main, secondary and other colors, bg-colors, borders, text and links
-2. Fix the height in projects section. It must be from auto to a good height to contain the imgs better
-*/
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
-  --bg-color: #3d3d3d;
-  --text-color: #f7f1e3;
-  --title-color: #3d3d3d;
+  --bg-color: #118AB2;
+  --text-color: #FFF;
+  --title-color: #212529;
   --invalid-border: #ff5252;
   --success-border: #33d9b2;
 }
@@ -23,7 +19,7 @@ body {
   margin: 0;
 }
 
-main {
+main{
   background-color: #ddd;
 }
 
@@ -322,9 +318,12 @@ h1 {
 }
 
 .footer-main {
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(0, 0, 0, .7); */
+  background-color: #333;
   color: #fff;
 }
+
+
 
 @media screen and (min-width: 1020px) {
   .ul-nav {

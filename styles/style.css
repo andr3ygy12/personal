@@ -345,9 +345,8 @@ h1 {
 
   .contenedor-proyecto {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
-    padding: 1rem;
     margin-top: 1rem;
   }
 
@@ -360,7 +359,7 @@ h1 {
     transform: scale(1.01);
   }
 
-  .projects-article {
+  .project-1 {
     display: flex;
     flex-flow: column nowrap;
     width: 45%;

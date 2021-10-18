@@ -7,6 +7,11 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
+  --bg-color: #3d3d3d;
+  --text-color: #f7f1e3;
+  --title-color: #3d3d3d;
+  --invalid-border: #ff5252;
+  --success-border: #33d9b2;
 }
 *,
 *:before,
@@ -18,13 +23,18 @@ body {
   margin: 0;
 }
 
+main {
+  background-color: #ddd;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 .header-main {
   width: 100%;
-  background-color: sandybrown;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .nav-header,
@@ -72,12 +82,13 @@ img {
 
 h1 {
   font-size: 10vw;
-  color: #fff;
+  color: var(--text-color);
   text-align: center;
 }
 .projects-section-title {
   font-size: 2rem;
   margin: 1rem auto 0.5rem;
+  color: var(--title-color);
 }
 .projects {
   width: 100%;
@@ -91,9 +102,15 @@ h1 {
 .project-title {
   text-align: left;
   margin: 1.2rem 0 0.5rem;
+  color: var(--title-color);
 }
 .card-text {
   text-align: justify;
+  color: #000;
+}
+
+.what-i-used {
+  color: var(--title-color);
 }
 
 .info-project ul {
@@ -115,6 +132,7 @@ h1 {
 .learning-title {
   text-align: center;
   margin-top: 0;
+  color: var(--title-color);
 }
 
 .cards-section {
@@ -133,29 +151,35 @@ h1 {
   font-size: 1.4rem;
   margin: 1rem;
   text-align: center;
+  color: #0009;
 }
 
 .icon-card {
   font-size: 3rem;
 }
 
-.html-icon {
+.html-icon,
+.card-title-html {
   color: #e54d26;
 }
 
-.css-icon {
+.css-icon,
+.card-title-css {
   color: #33a9dc;
 }
 
-.python-logo {
+.python-logo,
+.card-title-python {
   color: #366e9c;
 }
 
-.js-icon {
+.js-icon,
+.card-title-javascript {
   color: #f0be25;
 }
 
-.sql-icon {
+.sql-icon,
+.card-title-sql {
   color: #2077bc;
 }
 
@@ -167,6 +191,8 @@ h1 {
   margin-bottom: 0.5rem;
   font-size: 2rem;
   text-align: center;
+  color: var(--title-color);
+  color: #fff;
 }
 
 .main-form {
@@ -186,11 +212,11 @@ h1 {
 }
 
 .main-form * [required]:invalid {
-  border: thin solid #f44336;
+  border: 2px solid var(--invalid-border);
 }
 
 .main-form * [required]:valid {
-  border: thin solid #4caf50;
+  border: 2px solid var(--success-border);
 }
 
 .inputs {
@@ -205,6 +231,10 @@ h1 {
   margin: 0.5rem;
   padding: 0.5rem;
 }
+
+.inputs input:focus {
+  outline: none;
+}
 .main-form textarea {
   width: 80%;
   height: 80%;
@@ -213,36 +243,47 @@ h1 {
 }
 
 .submit-section {
+  width: 100%;
   margin-top: 0.5rem;
+  text-align: center;
 }
 
 .submit-section input {
+  width: 5.5rem;
+  height: 2rem;
+  width: 20%;
   font-size: 1rem;
   padding: 0.1rem;
+  background-color: #fff;
+  border: 1px solid black;
 }
 
 .information {
   width: 100%;
 }
 .about-me {
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .about-me-title {
   font-size: 2rem;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0.5rem;
+  color: var(--title-color);
+  color: #fff;
 }
 
 .divider {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
+  margin-top: 2rem;
 }
 .about-me-img-article {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
 }
 
 .about-me-img {
@@ -266,7 +307,7 @@ h1 {
 }
 
 .link-icon {
-  color: #000;
+  color: rgb(235, 235, 235);
   text-decoration: none;
 }
 
@@ -278,6 +319,11 @@ h1 {
 .copyright-section {
   margin: 1rem 0 0;
   text-align: center;
+}
+
+.footer-main {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
 }
 
 @media screen and (min-width: 1020px) {
@@ -370,7 +416,7 @@ h1 {
   }
 
   .copyright-section {
-    text-align: center;
+    align-self: center;
   }
 
   .social-media {
@@ -416,8 +462,6 @@ h1 {
   }
 
   .submit-section input {
-    background-color: #fff;
-    border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
     width: 5.5rem;

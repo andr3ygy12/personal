@@ -35,11 +35,11 @@
     </header>
 
     <main>
-        <section class="hero-image">
-            <article class="blur-like">
+        <div class="hero-image">
+            <div class="blur-like">
                 <h1 id="myTitle"></h1>
-            </article>
-        </section>
+            </div>
+        </div>
 
         <section class="projects" id="projects">
             <h2 class="projects-section-title">Proyectos</h2>
@@ -90,7 +90,7 @@
 
 
                     <article class="first-side">
-                        <a href="https://andr3ygy12.github.io/flexbox/" target="_blank">
+                        <a href="" target="_blank">
                             <img src="./assets/media/images/PNG/coming-soon-g20179beed_1280.jpg"
                                 alt="Imagen de proximamente" class="img-project">
                         </a>
@@ -107,53 +107,45 @@
             <h2 class="learning-title">Tecnologías que estoy aprendiendo</h2>
             <section class="cards-section">
                 <article class="cards card-1">
-                    <h2 class="card-title">HTML</h2>
-                    <article class="image-card">
-                        <i class="fab fa-html5 icon-card html-icon"></i>
-                    </article>
+                    <h2 class="card-title card-title-html">HTML</h2>
+                    <i class="fab fa-html5 icon-card html-icon"></i>
                 </article>
                 <article class="cards card-2">
-                    <h2 class="card-title">CSS</h2>
-                    <article class="image-card">
-                        <i class="fab fa-css3-alt icon-card css-icon"></i>
-                    </article>
+                    <h2 class="card-title card-title-css">CSS</h2>
+                    <i class="fab fa-css3-alt icon-card css-icon"></i>
                 </article>
                 <article class="cards card-3">
-                    <h2 class="card-title">JavaScript</h2>
-                    <article class="image-card">
-                        <i class="fab fa-js icon-card js-icon"></i>
-                    </article>
+                    <h2 class="card-title card-title-javascript">JavaScript</h2>
+                    <i class="fab fa-js icon-card js-icon"></i>
                 </article>
                 <article class="cards card-4">
-                    <h2 class="card-title">Flexbox</h2>
-                    <article class="image-card">
-                        <i class="fab fa-css3 icon-card css-icon"></i>
-                    </article>
+                    <h2 class="card-title card-title-css">Flexbox</h2>
+                    <i class="fab fa-css3 icon-card css-icon"></i>
                 </article>
                 <article class="cards card-5">
-                    <h2 class="card-title">Python</h2>
-                    <article class="image-card">
-                        <i class="fab fa-python icon-card python-logo"></i>
-                    </article>
+                    <h2 class="card-title card-title-python">Python</h2>
+                    <i class="fab fa-python icon-card python-logo"></i>
                 </article>
                 <article class="cards card-6">
-                    <h2 class="card-title">SQL</h2>
-                    <article class="image-card">
-                        <i class="fas fa-database icon-card sql-icon"></i>
-                    </article>
+                    <h2 class="card-title card-title-sql">SQL</h2>
+                    <i class="fas fa-database icon-card sql-icon"></i>
                 </article>
             </section>
         </section>
         </section>
 
         <!-- info -->
-        <section class="pre-footer" id="contact">
-            <section class="information">
+
+    </main>
+
+    <footer class="footer-main" id="contact">
+        <div class="pre-footer">
+            <div class="information">
                 <section class="about-me">
                     <h2 class="about-me-title">Acerca de mí</h2>
                     <article class="about-me-text">
                         <p>
-                            Soy un estudiando de Analisis y Desarrollo de Sistemas de Información en el Servicio
+                            Soy un estudiante de Analisis y Desarrollo de Sistemas de Información en el Servicio
                             Nacional de
                             Aprendizaje (SENA), Colombia.
                         </p>
@@ -164,13 +156,14 @@
                         </p>
                     </article>
 
-                    <section class="divider">
-                        <article class="about-me-img-article">
+                    <div class="divider">
+
+                        <div class="about-me-img-article">
                             <img src="./assets/media/images/PNG/photo_2021-09-11_22-52-08.jpg"
                                 alt="Foto acerca del autor de la página" class="about-me-img">
-                        </article>
+                        </div>
 
-                        <article class="social-media">
+                        <div class="social-media">
                             <a href="https://twitter.com/Andr3yg" class="link-icon" target="_blank">
                                 <i class="fab fa-twitter social-media-icon">
                                     <span class="span-icon">Twitter</span>
@@ -180,41 +173,38 @@
                             <a href="https://www.facebook.com/andr3yg/" class="link-icon" target="_blank">
                                 <i class="fab fa-facebook social-media-icon"><span class="span-icon">Facebook</span></i>
                             </a>
+
                             <a href="https://t.me/andr3yg" class="link-icon" target="_blank">
                                 <i class="fab fa-telegram social-media-icon"><span class="span-icon">Telegram</span></i>
                             </a>
-                        </article>
-                    </section>
+                        </div>
+                    </div>
                 </section>
-
-            </section>
-
+            </div>
 
             <section class="contact-form">
                 <h2 class="contact-title">Ponte en contacto conmigo!😁</h2>
                 <form action="https://formsubmit.co/andreyguerrero32@gmail.com" method="POST" class="main-form"
                     autocomplete="off">
-                    <section class="inputs">
+                    <div class="inputs">
                         <input type="text" name="name" id="name" placeholder="Nombre de usuario" required
                             pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
                         <input type="text" name="email" id="email" placeholder="Correo electronico"
                             pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" required>
-                    </section>
+                    </div>
                     <textarea name="comment" id="comment" placeholder="Duda, inquietud, opinión, etc."
                         required></textarea>
 
-                    <section class="submit-section">
-                        <input type="submit">
-                    </section>
+                    <div class="submit-section">
+                        <input type="submit" value="Enviar">
+                    </div>
                 </form>
-            </section>
-        </section>
-    </main>
 
-    <footer class="footer-main">
-        <section class="copyright-section">
+            </section>
+        </div>
+        <div class="copyright-section">
             <span class="copyright">Hecho con ❤️ por Andrey</span>
-        </section>
+        </div>
     </footer>
 
     <script src="https://unpkg.com/typeit@8.0.3/dist/index.umd.js"></script>

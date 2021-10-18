@@ -109,7 +109,7 @@ h1 {
   color: var(--title-color);
 }
 
-.info-project ul {
+.ul-info-project {
   padding: 0;
   list-style-position: inside;
 }

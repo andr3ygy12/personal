@@ -26,9 +26,12 @@
         <nav class="nav-header">
             <ul class="ul-nav">
 
-                <li class="list-item"><a href="#projects" class="link-item">Proyectos</a></li>
-                <li class="list-item"><a href="#learning" class="link-item">Aprendizaje</a></li>
-                <li class="list-item"><a href="#contact" class="link-item">Contacto</a></li>
+                <li class="list-item"><a href="#projects" aria-label="Ir al apartado de proyectos"
+                        class="link-item">Proyectos</a></li>
+                <li class="list-item"><a href="#learning" aria-label="Ir al apartado de aprendizaje"
+                        class="link-item">Aprendizaje</a></li>
+                <li class="list-item"><a href="#contact" aria-label="Ir al apartado de contacto"
+                        class="link-item">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -40,13 +43,13 @@
             </div>
         </div>
 
-        <section class="projects" id="projects">
+        <section class="projects" id="projects" aria-label="Proyectos personales">
             <h2 class="projects-section-title">Proyectos</h2>
 
             <div class="contenedor-proyecto">
 
                 <div class="project-1">
-                    <article class="info-project">
+                    <article class="info-project" aria-label="Sitio de mascotas">
                         <h2 class="project-title">Sitio de mascotas</h2>
                         <p class="card-text">
                             Es un sitio web estatico y básico acerca de mascotas. Pensado como una página informativa
@@ -58,21 +61,21 @@
                             <li>CSS</li>
                             <li>Flexbox</li>
                         </ul>
+
+                        <div class="img-project-container">
+                            <a href="https://andr3ygy12.github.io/flexbox/" target="_blank" class="link-project">
+                                <img src="./assets/media/images/PNG/mascotas.jpeg" alt="Dos perros corriendo"
+                                    class="img-project" aria-label="Ir al proyecto de mascotas">
+                            </a>
+                        </div>
                     </article>
 
-
-                    <div class="first-side">
-                        <a href="https://andr3ygy12.github.io/flexbox/" target="_blank" class="link-project">
-                            <img src="./assets/media/images/PNG/mascotas.jpeg" alt="Dos perros corriendo"
-                                class="img-project">
-                        </a>
-                    </div>
                 </div>
 
 
                 <div class="project-1">
 
-                    <article class="info-project">
+                    <article class="info-project" aria-label="Proyecto que estará disponible proximamente">
                         <h2 class="project-title">Proximamente...</h2>
                         <p class="card-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas tempora maiores reiciendis
@@ -84,15 +87,16 @@
                             <li>Proximamente</li>
                             <li>Proximamente</li>
                         </ul>
-                    </article>
 
-
-                    <div class="first-side">
-                        <a href="" target="_blank">
+                        <div class="img-project-container">
+                            <!-- <a href="" target="_blank"> -->
                             <img src="./assets/media/images/PNG/coming-soon-g20179beed_1280.jpg" alt="Proximamente"
                                 class="img-project">
-                        </a>
-                    </div>
+                            <!-- </a> -->
+                        </div>
+
+                    </article>
+
                 </div>
 
             </div>
@@ -100,31 +104,31 @@
 
         </section>
 
-        <section class="learning" id="learning">
+        <section class="learning" id="learning" aria-label="Curva de aprendizaje actual">
             <!-- CARDS PLACE -->
             <h2 class="learning-title">Tecnologías que estoy aprendiendo</h2>
             <div class="cards-section">
-                <article class="cards card-1">
+                <article class="cards card-1" aria-label="HTML">
                     <h2 class="card-title card-title-html">HTML</h2>
                     <i class="fab fa-html5 icon-card html-icon"></i>
                 </article>
-                <article class="cards card-2">
+                <article class="cards card-2" aria-label="CSS">
                     <h2 class="card-title card-title-css">CSS</h2>
                     <i class="fab fa-css3-alt icon-card css-icon"></i>
                 </article>
-                <article class="cards card-3">
+                <article class="cards card-3" aria-label="JavaScript">
                     <h2 class="card-title card-title-javascript">JavaScript</h2>
                     <i class="fab fa-js icon-card js-icon"></i>
                 </article>
-                <article class="cards card-4">
+                <article class="cards card-4" aria-label="Flexbox">
                     <h2 class="card-title card-title-css">Flexbox</h2>
                     <i class="fab fa-css3 icon-card css-icon"></i>
                 </article>
-                <article class="cards card-5">
+                <article class="cards card-5" aria-label="Python">
                     <h2 class="card-title card-title-python">Python</h2>
                     <i class="fab fa-python icon-card python-logo"></i>
                 </article>
-                <article class="cards card-6">
+                <article class="cards card-6" aria-label="SQL">
                     <h2 class="card-title card-title-sql">SQL</h2>
                     <i class="fas fa-database icon-card sql-icon"></i>
                 </article>
@@ -133,10 +137,10 @@
 
     </main>
 
-    <footer class="footer-main" id="contact">
+    <footer class="footer-main" id="contact" aria-label="Seccion de contacto">
         <div class="pre-footer">
             <div class="information">
-                <section class="about-me">
+                <section class="about-me" aria-label="Información personal">
                     <h2 class="about-me-title">Acerca de mí</h2>
                     <article class="about-me-text">
                         <p>
@@ -159,17 +163,20 @@
                         </div>
 
                         <div class="social-media">
-                            <a href="https://twitter.com/Andr3yg" class="link-icon" target="_blank">
+                            <a href="https://twitter.com/Andr3yg" class="link-icon" target="_blank"
+                                aria-label="Contactar por medio de Twitter">
                                 <i class="fab fa-twitter social-media-icon">
                                     <span class="span-icon">Twitter</span>
                                 </i>
                             </a>
 
-                            <a href="https://www.facebook.com/andr3yg/" class="link-icon" target="_blank">
+                            <a href="https://www.facebook.com/andr3yg/" class="link-icon" target="_blank"
+                                aria-label="Contactar por medio de Facebook">
                                 <i class="fab fa-facebook social-media-icon"><span class="span-icon">Facebook</span></i>
                             </a>
 
-                            <a href="https://t.me/andr3yg" class="link-icon" target="_blank">
+                            <a href="https://t.me/andr3yg" class="link-icon" target="_blank"
+                                aria-label="Contactar por medio de Telegram">
                                 <i class="fab fa-telegram social-media-icon"><span class="span-icon">Telegram</span></i>
                             </a>
                         </div>
@@ -177,7 +184,7 @@
                 </section>
             </div>
 
-            <section class="contact-form">
+            <section class="contact-form" aria-label="Formulario de contacto">
                 <h2 class="contact-title">Ponte en contacto conmigo!😁</h2>
                 <form action="https://formsubmit.co/andreyguerrero32@gmail.com" method="POST" class="main-form"
                     autocomplete="off">
@@ -198,7 +205,7 @@
             </section>
         </div>
         <div class="copyright-section">
-            <span class="copyright">Hecho con ❤️ por Andrey</span>
+            <span class="copyright">Hecho con ❤️ por <a href=""></a> Andrey</span>
         </div>
     </footer>
 

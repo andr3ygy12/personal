@@ -200,18 +200,18 @@ h1 {
   align-items: center;
 }
 
-.main-form > * {
+.form-child{
   font-size: 1rem;
   font-family: sans-serif;
   caret-color: #333;
   margin-bottom: 0.25rem;
 }
 
-.main-form * [required]:invalid {
+.form-inputs:invalid {
   border: 2px solid var(--invalid-border);
 }
 
-.main-form * [required]:valid {
+.form-inputs:valid {
   border: 2px solid var(--success-border);
 }
 
@@ -221,17 +221,17 @@ h1 {
   justify-content: space-evenly;
 }
 
-.inputs input {
+.form-inputs {
   width: 70%;
   height: 2rem;
   margin: 0.5rem;
   padding: 0.5rem;
 }
 
-.inputs input:focus {
+.form-inputs:focus {
   outline: none;
 }
-.main-form textarea {
+.form-textarea {
   width: 80%;
   height: 80%;
   padding: 0.5rem;
@@ -244,7 +244,7 @@ h1 {
   text-align: center;
 }
 
-.submit-section input {
+.form-submit {
   width: 5.5rem;
   height: 2rem;
   width: 20%;
@@ -448,18 +448,18 @@ h1 {
     margin-bottom: 1rem;
   }
 
-  .inputs input {
+  .form-inputs{
     height: 2.5rem;
     margin-bottom: 0.5rem;
   }
 
-  .main-form textarea {
+  .form-textarea {
     width: 60%;
     height: 60%;
     padding: 0.5rem;
   }
 
-  .submit-section input {
+  .form-submit {
     margin-left: auto;
     margin-right: auto;
     width: 5.5rem;
@@ -467,7 +467,7 @@ h1 {
     text-align: center;
   }
 
-  .submit-section input:hover {
+  .form-submit:hover {
     cursor: pointer;
     background-color: #ddd;
   }

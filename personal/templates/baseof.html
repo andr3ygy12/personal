@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal Andrey Guerrero">
+    <meta name="keywords" content="portafolio">
+    <title>
+        Andrey |
+        {% block title %}
+            Inicio 
+        {% endblock title %}
+            
+    </title>
+    <!-- Font Awesome Kit For Icons Only -->
+    <script src="https://kit.fontawesome.com/739db76352.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--  Icon    -->
+    <link rel="icon" href="{% static 'images/PNG/dog.png' %}">
+    <link rel="apple-touch-icon" href="{% static 'images/PNG/dog.png' %}">
+
+    <!-- local files -->
+    <link rel="stylesheet" href=" {% static 'styles/style.css' %}">
+
+</head>
+
+<body id="home">
+
+    {% include 'header.html' %}
+
+
+    {% block content %}
+        <main class="main-base-of">
+            <div class="hero-image">
+                <!-- No es error, funciona normal -->
+                <div class="blur-like">
+                    <h1 id="myTitle" class="main-h1-title"></h1>
+                </div>
+            </div>
+
+            <section class="projects" id="projects" aria-label="Proyectos personales">
+                <h2 class="projects-section-title">Proyectos</h2>
+
+                <div class="contenedor-proyecto">
+
+                    <div class="project-1">
+                        <article class="info-project">
+                            <h2 class="project-title">Sitio de mascotas</h2>
+                            <p class="card-text">
+                                Es un sitio web estatico y básico acerca de mascotas. Pensado como una página informativa
+                                para algún tipo de veterinaria o por el estilo.
+                            </p>
+                            <h3 class="what-i-used"> Tecnologías usadas</h3>
+                            <ul class="ul-info-project">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Flexbox</li>
+                            </ul>
+
+                            <div class="img-project-container">
+                                <a href="https://andr3ygy12.github.io/flexbox/" target="_blank" class="link-project">
+                                    <img src="{% static 'images/PNG/mascotas.jpeg' %}" alt="Dos perros corriendo"
+                                        class="img-project" aria-label="Ir al proyecto de mascotas">
+                                </a>
+                            </div>
+                        </article>
+
+                    </div>
+
+
+                    <div class="project-1">
+
+                        <article class="info-project">
+                            <h2 class="project-title">Proximamente</h2>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas tempora maiores reiciendis
+                                exercitationem culpa expedita, earum beatae similique fugiat?
+                            </p>
+                            <h3 class="what-i-used"> Tecnologías usadas</h3>
+                            <ul>
+                                <li>Proximamente</li>
+                                <li>Proximamente</li>
+                                <li>Proximamente</li>
+                            </ul>
+
+                            <div class="img-project-container">
+                                <!-- <a href="" target="_blank"> -->
+                                <img src="{% static 'images/PNG/coming-soon-g20179beed_1280.jpg' %}" alt="Proximamente"
+                                    class="img-project">
+                                <!-- </a> -->
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <section class="learning" id="learning" aria-label="Curva de aprendizaje actual">
+                <!-- CARDS PLACE -->
+                <h2 class="learning-title">Tecnologías que estoy aprendiendo</h2>
+                <div class="cards-section">
+                    <article class="cards card-1" aria-label="HTML">
+                        <h2 class="card-title card-title-html">HTML</h2>
+                        <i class="fab fa-html5 icon-card html-icon"></i>
+                    </article>
+                    <article class="cards card-2" aria-label="CSS">
+                        <h2 class="card-title card-title-css">CSS</h2>
+                        <i class="fab fa-css3-alt icon-card css-icon"></i>
+                    </article>
+                    <article class="cards card-3" aria-label="JavaScript">
+                        <h2 class="card-title card-title-javascript">JavaScript</h2>
+                        <i class="fab fa-js icon-card js-icon"></i>
+                    </article>
+                    <article class="cards card-4" aria-label="Flexbox">
+                        <h2 class="card-title card-title-css">Flexbox</h2>
+                        <i class="fab fa-css3 icon-card css-icon"></i>
+                    </article>
+                    <article class="cards card-5" aria-label="Python">
+                        <h2 class="card-title card-title-python">Python</h2>
+                        <i class="fab fa-python icon-card python-logo"></i>
+                    </article>
+                    <article class="cards card-6" aria-label="SQL">
+                        <h2 class="card-title card-title-sql">SQL</h2>
+                        <i class="fas fa-database icon-card sql-icon"></i>
+                    </article>
+                </div>
+            </section>
+            
+
+            <div class="personal-information">
+                <div class="pre-footer">
+                    <div class="information">
+                        <section class="about-me" aria-label="Información personal">
+                            <h2 class="about-me-title">Aspiraciones Personales</h2>
+                            <article class="about-me-text">
+                                <p>
+                                    Dentro de mis metas a medio plazo está aprender desarrollo back-end, para esto me encuentro aprendiendo Python/Django
+                                </p>
+                                <p>
+                                    Nunca sabemos exactamente lo que pueda pasar en un futuro, por eso más que quedarme con un lenguaje, me gusta adaptarme a nuevas tecnologías.
+                                </p>
+                            </article>
+
+                            <div class="divider">
+                                <div class="about-me-img-article">
+                                    <img src="{% static 'images/PNG/photo_2021-09-11_22-52-08.jpg' %}"
+                                        alt="Foto acerca del autor de la página" class="about-me-img">
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+
+                    <section class="contact-form" aria-label="Formulario de contacto">
+                        <h2 class="contact-title">Ponte en contacto conmigo!😁</h2>
+                        <form action="https://formsubmit.co/564b878f9bf448c9ec7100fe40d0bab8" method="POST"
+                            class="main-form" autocomplete="off">
+                            <div class="inputs form-child">
+                                <input type="text" name="name" id="name" placeholder="Nombre de usuario" required
+                                    class="form-inputs" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+                                <input type="text" name="email" id="email" placeholder="Correo electronico"
+                                    pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" required class="form-inputs">
+                            </div>
+                            <textarea name="comment" id="comment" placeholder="Duda, inquietud, opinión, etc."
+                                class="form-textarea form-child" required></textarea>
+
+                            <div class="submit-section form-child">
+                                <input type="submit" value="Enviar" class="form-submit">
+                            </div>
+                        </form>
+
+                    </section>
+                </div>
+
+            </div>
+
+        </main>
+    {% endblock content %}
+
+
+
+    {% include 'footer.html' %}
+
+
+    <!-- Scripts -->
+    <script src="{% static 'javascript/index.js' %}"></script>
+    <!-- Script typedJS -->
+    <script src="https://unpkg.com/typeit@8.0.3/dist/index.umd.js"></script>
+
+</body>
+
+
+
+</html>

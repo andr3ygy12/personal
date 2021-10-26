@@ -1,0 +1,59 @@
+{% extends 'baseof.html' %}
+{% load markdown_extras %}
+
+{% block title %}
+    Blog
+{% endblock title %}
+    
+    
+    {% block content %}        
+        <main class="main-blog">
+
+            <div class="hero-image-blog">
+                <div class="blur-blog">
+                    <h1 class="h1-blog">Blog Personal</h1>
+                    <h2 id="myName" class="h2-blog">Andrey Guerrero 😎</h2>
+                </div>
+            </div>
+
+            <section class="blog" id="blog">
+                <h2 class="blog-title">Articulos más recientes</h2>
+
+                <div class="post-container">
+                    {% if post_list %}
+
+                        {% for post in object_list %}
+                            <article class="post-card">
+                                <a href="{% url 'post_detail' post.slug %}">
+                                    {% if post.image.url %}
+                                    <img src="{{post.image.url}}" alt="{{post.title}}">
+                                    {% else %}
+                                        <img src="/media/images/web-gded506d29_640_3EOE91l.jpg" alt="Cartas de colores rojizos">
+                                    {% endif %}
+                                </a>
+                                    
+
+                                <article class="post-card-desc">
+                                    <h2 class="post-title">{{ post.title}}</h2>
+                                    <span class="author-date">{{ post.author}} | {{ post.created_on}} </span>
+                                    <p class="content-post-summary">{{post.content | slice:":200" | markdown | safe }}</p>
+                                    <a href="{% url 'post_detail' post.slug  %}" class="read-more">Leer Más</a>
+                                </article>
+
+                            </article>
+                        {% endfor %}
+                </div>
+
+            
+            {% else %}
+                    <h2>No hay publicaciones</h2>
+            {% endif %}
+                
+            </section>
+        
+
+        </main>
+    {% endblock content %}
+            
+</body>
+</html>

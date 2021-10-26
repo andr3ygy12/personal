@@ -1,0 +1,799 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  --bg-color: #118ab2;
+  --text-color: #fff;
+  --title-color: #212529;
+  --invalid-border: #ff5252;
+  --success-border: #33d9b2;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+
+body {
+  margin: 0;
+  /* height: inherit; */
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
+main {
+  background-color: #eee;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.header-main {
+  width: 100%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.nav-header,
+.ul-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.ul-nav {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+.list-item {
+  padding: 1rem;
+}
+
+.link-item {
+  font-size: 1.2rem;
+  color: #fff;
+  
+  text-align: center;
+  text-decoration: none;
+}
+
+.hero-image,
+.hero-image-blog{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/WEBP/social-media-g39716b7d4_1920.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blur-like,
+.blur-blog{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-h1-title{
+  font-size: 10vw;
+  color: var(--text-color);
+  text-align: center;
+}
+.projects-section-title {
+  font-size: 2rem;
+  margin: 1rem auto 0.5rem;
+  color: var(--title-color);
+}
+.projects {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.5rem;
+}
+
+.project-title {
+  text-align: left;
+  margin: 1.2rem 0 0.5rem;
+  color: var(--title-color);
+}
+.card-text {
+  text-align: justify;
+  color: #000;
+  font-size: 1rem;
+}
+
+.what-i-used {
+  color: var(--title-color);
+}
+
+.ul-info-project {
+  padding: 0;
+  list-style-position: inside;
+}
+
+.learning {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  padding: 0 0.5rem 0;
+}
+
+.learning-title {
+  text-align: center;
+  margin-top: 0;
+  color: var(--title-color);
+}
+
+.cards-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.cards {
+  width: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.card-title {
+  font-size: 1.4rem;
+  margin: 1rem;
+  text-align: center;
+  color: #0009;
+}
+
+.icon-card {
+  font-size: 3rem;
+}
+
+.html-icon,
+.card-title-html {
+  color: #e54d26;
+}
+
+.css-icon,
+.card-title-css {
+  color: #33a9dc;
+}
+
+.python-logo,
+.card-title-python {
+  color: #366e9c;
+}
+
+.js-icon,
+.card-title-javascript {
+  color: #f0be25;
+}
+
+.sql-icon,
+.card-title-sql {
+  color: #2077bc;
+}
+
+.contact-form {
+  width: 100%;
+}
+.contact-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.main-form {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-child {
+  font-size: 1rem;
+  font-family: sans-serif;
+  caret-color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.form-inputs:invalid {
+  border: 2px solid var(--invalid-border);
+}
+
+.form-inputs:valid {
+  border: 2px solid var(--success-border);
+}
+
+.inputs {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+
+.form-inputs {
+  width: 70%;
+  height: 2rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.form-inputs:focus {
+  outline: none;
+}
+.form-textarea {
+  width: 80%;
+  height: 80%;
+  padding: 0.5rem;
+  resize: none;
+}
+
+.submit-section {
+  width: 100%;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.form-submit {
+  width: 5.5rem;
+  height: 2rem;
+  width: 20%;
+  font-size: 1rem;
+  padding: 0.1rem;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.personal-information{
+  background-color: rgb(231, 233, 233);
+}
+
+.information {
+  width: 100%;
+}
+.about-me {
+  padding: 1rem;
+}
+.about-me-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--title-color);
+}
+
+.divider {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+.about-me-img-article {
+  text-align: center;
+}
+
+.about-me-img {
+  border-radius: 50%;
+  width: 80%;
+  height: 90%;
+}
+
+.link-icon {
+  color: rgb(235, 235, 235);
+  text-decoration: none;
+}
+
+.span-icon {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  margin-left: 0.5rem;
+}
+
+
+.footer-main {
+  /* background-color: rgba(0, 0, 0, .7); */
+  background-color: #333;
+  color: #fff;
+  margin-top: auto;
+}
+
+/* Style for blog content */
+.blog{
+  background-color: rgb(216, 216, 216);
+  padding: 1rem;
+}
+.h1-blog {
+  font-size: 12vw;
+  margin: 0;
+  text-align: center;
+}
+
+.h2-blog{
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1.5rem;
+  margin: .5rem 0;
+}
+
+.blur-blog{
+  flex-flow: column nowrap;
+}
+
+.blog-title{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.post-card{
+  padding: .5rem;
+  /* background-color: rgb(216, 216, 216); */
+  filter: opacity(.9);
+  /* margin-bottom: 1rem; */
+  color: #000;
+  border: medium solid #333;
+  margin-bottom: .5rem;
+  border-radius: 5px;
+}
+
+.post-title{
+  text-align: center;
+  margin: .2rem 0 .5rem;
+}
+
+.author-date{
+  text-align: justify;
+
+}
+
+.content-post-summary{
+  font-family: sans-serif;
+  word-spacing: .2rem;
+  font-size: 1rem;
+  margin-top: .5rem;
+}
+
+.read-more{
+  display: block;
+  background: var(--bg-color);
+  color: var(--text-color);
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: .5rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.read-more:focus{
+  opacity: .9;
+}
+
+/* styles for the footer.html template */
+
+.footer-single{
+  background-color: #ddd;
+  padding: 1rem 1rem 0;
+}
+
+.footer-single-title{
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.footer-social-media-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+.social-media-icon--single{
+  color: #000;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* styles details.html */
+
+.main-content-detail{
+  padding: 1rem;
+  background-color: #eee;
+
+}
+
+.post-title-detail{
+  margin: 0;
+  margin-bottom: .5rem;
+  color: #000;
+}
+
+.ul-post-details{
+  width:100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  margin: 0;
+  margin-top: .5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.li-post-details{
+  margin-right: .7rem;
+}
+
+.author-span{
+  font-weight: bold;
+}
+.date-icon{
+  margin-right: .1rem;
+}
+
+.author-date-detail{
+  color: #333;
+  display: block;
+  text-align: right;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.post-content-img{
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.card-text-detail{
+  text-align: justify;
+  margin-top: .5rem;
+  /* font-size: 1rem; */
+}
+
+/* Styles for comments */
+.comments-container{
+  display: flex;
+  flex-direction: column;
+}
+.comment-title{
+  text-align: center;
+}
+.comments{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.information-comment{
+  display: flex;
+  flex-flow: row nowrap;
+  /* justify-content: center; */
+  align-items: center;
+}
+.user-profile-img{
+  width: 3rem;
+  height: 3rem;
+}
+
+.comment-author{
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 1rem;
+}
+
+.name-bold{
+  font-weight: bold;
+}
+.comment-author-date{
+  margin-left: .5rem;
+}
+
+.comment-body{
+  text-align: justify;
+}
+
+
+/* styles for main */
+.form-main{
+  font-family: "Raleway", sans-serif;
+}
+.form-main input{
+  display: block;
+  width: 70%;
+  height: 1.7rem;
+  padding: .5rem;
+  font-family: "Raleway", sans-serif;
+
+}
+
+.form-main textarea{
+  display: block;
+  resize: none;
+  padding: .5rem;
+
+  font-family: "Raleway", sans-serif;
+
+}
+
+@media screen and (min-width: 1020px) {
+  .ul-nav {
+    flex-flow: row nowrap;
+    width: 20%;
+    justify-content: space-evenly;
+  }
+
+  .ul-nav-details{
+    width: 20%;
+  }
+  .link-item:hover {
+    text-decoration: underline;
+  }
+
+  .main-h1-title {
+    font-size: 5vw;
+  }
+
+  .projects {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .contenedor-proyecto {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+
+  .img-project {
+    width: 100%;
+    height: 400px;
+  }
+
+  .img-project:hover {
+    transform: scale(1.01);
+  }
+
+  .project-1 {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 45%;
+    height: auto;
+  }
+
+  .project-title {
+    text-align: center;
+  }
+
+  .card-text {
+    text-align: justify;
+  }
+
+  .what-i-used {
+    margin-bottom: 0;
+  }
+
+  .learning {
+    margin-top: 2rem;
+    display: block;
+    padding: 1rem;
+  }
+
+  .learning-title {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .cards-section {
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin: 1rem auto 2rem;
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.7rem;
+  }
+  .icon-card {
+    font-size: 4rem;
+  }
+
+  .icon-card:hover {
+    transform: scale(1.1);
+  }
+
+  .pre-footer {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1rem;
+  }
+
+  .link-icon:hover {
+    transform: scale(1.05);
+  }
+
+  .fa-twitter:hover {
+    color: #1da1f2;
+  }
+
+  .fa-facebook:hover {
+    color: #4267b2;
+  }
+
+  .fa-telegram:hover {
+    color: #0088cc;
+  }
+
+  .about-me-img{
+    width: 50%;
+  }
+
+  .main-form {
+    height: 60vh;
+  }
+
+  .inputs {
+    width: 70%;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin-bottom: 1rem;
+  }
+
+  .form-inputs {
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-textarea {
+    width: 60%;
+    height: 60%;
+    padding: 0.5rem;
+  }
+
+  .form-submit {
+    margin-left: auto;
+    margin-right: auto;
+    width: 5.5rem;
+    height: 2rem;
+    text-align: center;
+  }
+
+  .form-submit:hover {
+    cursor: pointer;
+    background-color: #ddd;
+  }
+
+  /* Styles for blog */
+
+  .h1-blog{
+    font-size: 8vw;
+  }
+
+  .h2-blog{
+    font-size: 2vw;
+  }
+
+  .blog{
+    display: flex;
+    flex-flow: column nowrap;
+    /* height: 100vh; */
+  }
+  .blog-title{
+    font-size: 2rem;
+  }
+
+  .post-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+  }
+
+  .post-card{
+    width: 35%;
+    background-color: rgb(207, 207, 207);
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 1rem;
+    padding-top: .5rem;
+  }
+
+  .read-more{
+    width: 35%;
+  }
+
+  .read-more:hover{
+    opacity: .9;
+  }
+
+  /* Styles footer */
+  .footer-single{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(207, 207, 207);
+  }
+
+  .about-me-single{
+    flex-basis: 40%;
+  }
+  
+  .about-me-single-title{
+    text-align: center;
+  }
+
+  /* styles for post details */
+
+  .content{
+    line-height: 1.8;
+    font-size: 1.2rem;
+  }
+  .main-content-detail{
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    flex-grow: 1;
+
+  }
+
+  .content{
+    height: auto;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .post-title-detail{
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0;
+    text-align: justify;
+    /* font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
+
+  }
+  .author-date-detail{
+    font-size: 1.2rem;
+  }
+
+  .card-text-detail{
+    /* font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
+    margin: .5rem auto;
+    line-height: 1.8;
+    /* padding: 1rem; */
+    /* font-size: 1rem; */
+  }
+
+
+}

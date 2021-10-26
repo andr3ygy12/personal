@@ -1,0 +1,99 @@
+{% extends 'baseof.html' %}
+{% load static %}
+
+#https://learndjango.com/tutorials/django-markdown-tutorial
+{% load markdown_extras %}
+
+{% block title %}
+    {{post.title}}
+{% endblock title %}
+    
+    
+    {% block content %}
+        
+        <main class="main-content-detail">
+            <!-- <aside class="first-aside">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum porro, unde expedita temporibus odio accusamus ipsam atque, aut iste vel quis ad assumenda placeat eaque aliquid quam corporis soluta deleniti.</p>
+            </aside> -->
+
+
+            <section class="content">
+                <h1 class="post-title-detail">{{ post.title }}</h1>
+                <hr>
+                <!-- <img src="{{post.image.url}}" alt="{{post.title}}" class="post-content-img"> -->
+                <ul class="ul-post-details">
+                    <li class="li-post-details">
+                        By <span class="author-span">{{post.author}}</span>
+                    </li>
+
+                    <li class="li-post-details">
+                        <i class="fas fa-calendar-alt date-icon"></i>
+                        <span">{{ post.created_on}}</span>
+                    </li>
+                </ul>
+
+                <!-- <img src="{url }" alt=""> -->
+
+                <p class="card-text card-text-detail">{{ post.content | markdown | safe }} </p>
+                <!-- this class does not work, the post.content is other element (p) for the markdown and safe -->
+
+            </section>
+
+    <!-- 
+            <aside class="first-aside">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum porro, unde expedita temporibus odio accusamus ipsam atque, aut iste vel quis ad assumenda placeat eaque aliquid quam corporis soluta deleniti.</p>
+            </aside> -->
+
+            <div class="comments-container">
+                  <!-- comments -->
+                  <h2 class="comment-title">{{ comments.count }} Comentarios</h2>
+          
+                  {% for comment in comments %}
+                  <div class="comments">
+                    <div class="information-comment">
+                      <img src="{% static 'images/PNG/user.png' %}" alt="Icono por defecto de un usuario random" class="user-profile-img">
+  
+                      <div class="comment-author">
+                        <p class="">
+                          <span class="name-bold">
+                            {{ comment.name }}
+                          </span>  
+                          <span class="comment-author-date">
+                            <i class="fas fa-calendar-alt date-icon"></i>
+                            {{ comment.created_on }}
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="comment-body">
+                      {{ comment.body | linebreaks }}   
+                    </div>
+                  </div>
+
+                  {% endfor %}
+
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  {% if new_comment %}
+                  <div class="" role="alert">
+                    Your comment is awaiting moderation
+                  </div>
+                  {% else %}
+                  <h3>Deja un comentario 👌</h3>
+                  <form method="post" class="form-main">
+                    {{ comment_form.as_p }}
+                    {% csrf_token %}
+                    <button type="submit" class="">Envíar</button>
+                  </form>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </main>
+    {% endblock content %}

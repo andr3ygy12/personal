@@ -75,21 +75,23 @@
                 </div>
               </div>
 
-              <div>
-                <div>
+              <div class="form-container">
+                <!-- <> -->
                   {% if new_comment %}
-                  <div class="" role="alert">
-                    Your comment is awaiting moderation
+                  <div class="waiting-comment" role="alert">
+                    <span>
+                      Tu comentario será revisado para su posterior publicación😉
+                    </span>
                   </div>
                   {% else %}
-                  <h3>Deja un comentario 👌</h3>
+                  <h3 class="let-comment">Deja un comentario 👌</h3>
                   <form method="post" class="form-main">
                     {{ comment_form.as_p }}
                     {% csrf_token %}
-                    <button type="submit" class="">Envíar</button>
+                    <button type="submit" class="form-submit">Envíar</button>
                   </form>
                   {% endif %}
-                </div>
+                <!-- </> -->
               </div>
             </div>
           </div>

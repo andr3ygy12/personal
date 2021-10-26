@@ -321,10 +321,12 @@ img {
   background-color: rgb(216, 216, 216);
   padding: 1rem;
 }
+
 .h1-blog {
   font-size: 12vw;
   margin: 0;
   text-align: center;
+  color: #fff;
 }
 
 .h2-blog{
@@ -474,6 +476,10 @@ img {
   /* font-size: 1rem; */
 }
 
+.waiting-comment{
+  text-align: center;
+}
+
 /* Styles for comments */
 .comments-container{
   display: flex;
@@ -537,6 +543,11 @@ img {
 
   font-family: "Raleway", sans-serif;
 
+}
+
+.let-comment{
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 1020px) {
@@ -794,6 +805,88 @@ img {
     /* padding: 1rem; */
     /* font-size: 1rem; */
   }
+
+
+  .main-content-detail{
+    flex-direction: column;
+  }
+
+  .comments-container{
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .comment-title{
+    margin-bottom: 1.5rem;
+  }
+
+  .comment-author{
+    font-size: 1rem;
+  }
+
+  .user-profile-img{
+    width: 10%;
+    height: 10%;
+  }
+
+  .comments{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .comment-body{
+    width: 50%;
+    font-size: 1.2rem;
+    padding:1rem;
+  }
+
+  .information-comment{
+    width: 50%;
+  }
+
+  .let-comment{
+    margin-top: 0;
+    font-size: 2rem;
+  }
+
+
+  .form-container{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 .5rem 1rem;
+  }
+
+  .form-main input{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2rem;
+  
+  }
+
+  .form-main label{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: .5rem;
+  }
+  
+  .form-main textarea{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Raleway", sans-serif;
+    width: 50%;
+  }
+
+  .form-submit{
+    display: block;
+    width: 10%;
+  }
+
 
 
 }
